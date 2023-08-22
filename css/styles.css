@@ -15,40 +15,64 @@ body {
 }
 * {
   margin: 0px;
+  text-decoration: none;
 }
 
 ul {
   list-style: none;
   padding: 0;
 }
+
 .cointainer,
 .cointainer__navigation,
 .cointainer_equipment {
   margin: 0 auto;
   width: 1200px;
 }
+
+.cointainer__navigation {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .webstudio__icon {
+  color: var(--buttons__color);
   font-family: var(--font-family2);
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
 
-  text-align: right;
+  text-align: left;
+  margin-right: 93px;
   letter-spacing: 0.03em;
-
-  color: var(--buttons__color);
+}
+.navigation__list {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 281px;
+  height: 16px;
+  top: 32px;
+  left: 453px;
+  gap: 50px;
 }
 .navigation__link {
-  font-family: "Roboto";
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--titles__color);
 }
-.address__navigation {
+.list__address {
+  justify-content: space-between;
+  display: flex;
+  gap: 50px;
+  margin-left: 244px;
+}
+.navigation__address {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 500;
