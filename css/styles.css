@@ -10,7 +10,7 @@
 
 body {
   font-family: var(--font-family);
-  color: var(--titles__color);
+  /* color: var(--titles__color); */
   margin: 0px;
 }
 * {
@@ -24,6 +24,7 @@ ul {
 }
 
 .cointainer,
+.cointainer__service,
 .cointainer__navigation,
 .cointainer_equipment {
   margin: 0 auto;
@@ -81,12 +82,11 @@ ul {
   letter-spacing: 0.02em;
   color: var(--titles__color);
 }
-.buttonlink:hover {
-  color: #2196f3;
+.navigation__address:hover,
+.navigation__link:hover {
+  color: var(--buttons__color);
 }
-.address:hover {
-  color: #2196f3;
-}
+
 .background__hero {
   background: var(--background__color);
   padding: 94px;
@@ -107,6 +107,7 @@ ul {
   letter-spacing: 2.64px;
   text-transform: uppercase;
   width: 696px;
+  margin: 36px 0;
 }
 .hero__button {
   font-family: var(--font-family);
@@ -118,16 +119,28 @@ ul {
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
   letter-spacing: 0.06em;
   width: 261px;
+  padding: 10px 2px;
 
   color: var(--primary__color);
   background: var(--buttons__color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-h4 {
-  font-family: "Roboto";
+
+.list__service {
+  display: flex;
+  padding: 94px 0;
+}
+
+.item__service {
+  margin: 14px;
+  width: 270px;
+}
+.title__service {
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -135,16 +148,18 @@ h4 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #212121;
+  margin: 16px 0;
+  color: var(--titles__color);
 }
-p {
-  font-family: "Roboto";
+.texto__service {
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
 
   letter-spacing: 0.03em;
+  color: var(--text__color);
 }
 h2 {
   font-family: "Roboto";
@@ -163,7 +178,6 @@ h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
-  /* identical to box height, or 200% */
 
   letter-spacing: 0.06em;
 
