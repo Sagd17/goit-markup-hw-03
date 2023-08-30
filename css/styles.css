@@ -6,6 +6,7 @@
   --primary__color: rgb(255, 255, 255);
   --font-family: "roboto", sans-serif;
   --font-family2: "raleway", sans-serif;
+  --border: rgb(236, 236, 236);
 }
 
 * {
@@ -18,6 +19,10 @@ ul {
   padding: 0;
 }
 
+.header {
+  border: 1px solid;
+  color: var(--border);
+}
 
 .cointainer,
 .cointainer__navigation,
@@ -81,10 +86,14 @@ ul {
   color: var(--titles__color);
 }
 .navigation__address:hover,
-.navigation__link:hover {
+.navigation__link:hover,
+.contact__footer:hover {
   color: var(--buttons__color);
 }
 
+.focus_select {
+  color: var(--buttons__color);
+}
 .background__hero {
   background: var(--background__color);
   padding: 94px;
@@ -234,7 +243,7 @@ ul {
 }
 
 .list__icon__footer {
-margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .webstudio__icon__footer {
@@ -249,6 +258,27 @@ margin-bottom: 9px;
   letter-spacing: 0.03em;
 }
 
+.localization__map:visited {
+  color: var(--primary__color);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.contact__footer {
+  color: var(--text__color);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.contact__footer_map{
+  width: 231px;
+}
 
 .poster {
   font-family: var(--font-family);
