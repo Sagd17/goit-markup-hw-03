@@ -7,11 +7,16 @@
   --font-family: "roboto", sans-serif;
   --font-family2: "raleway", sans-serif;
   --border: rgb(236, 236, 236);
+  --portafolio__buttons: rgb(245, 244, 250);
 }
 
 * {
   margin: 0px;
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 ul {
@@ -24,12 +29,15 @@ ul {
   color: var(--border);
 }
 
-.cointainer,
 .cointainer__navigation,
 .cointainer__equipment,
 .cointainer__images,
 .cointainer__service,
-.contact__footer {
+.contact__footer,
+.portafolio__cointainer,
+.portafolio__button,
+.portafolio__images,
+.portafolio__list {
   margin: 0 auto;
   width: 1200px;
 }
@@ -280,37 +288,45 @@ ul {
   width: 231px;
 }
 
-.poster {
+.portafolio__cointainer {
+  padding: 106px 0 82px 0;
+}
+
+.portafolio__button {
+  display: flex;
+  justify-content: space-around;
+  width: 611px;
+  height: 54px;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+
+.portafolio__content {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  color: #212121;
-  background: #f5f4fa;
+  color: var(--titles__color);
+  background: var(--portafolio__buttons);
   border-radius: 4px;
-}
-.poster:hover {
-  font-family: var(--font-family);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #ffffff;
-  background: #2196f3;
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-.poster:active {
-  background: #2196f3;
+  border: none;
+  padding: 6px 24px;
 }
 
-button {
-  cursor: pointer;
+.portafolio__content:hover,
+.portafolio__content:focus {
+  color: var(--primary__color);
+  background-color: var(--buttons__color);
+}
+
+.portafolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portafolio__Card {
+  border: 1px solid;
 }
