@@ -144,6 +144,10 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+.hero__button:hover {
+  color: var(--buttons__color);
+  background-color: var(--primary__color);
+}
 
 .list__service {
   display: flex;
@@ -298,8 +302,8 @@ ul {
   width: 611px;
   height: 54px;
   align-items: center;
-  margin-bottom: 50px;
   gap: 8px;
+  padding-bottom: 50px;
 }
 
 .portafolio__content {
@@ -325,8 +329,53 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 30px;
 }
 
-.portafolio__Card {
-  border: 1px solid;
+.portafolio__card {
+  width: 370px;
+  height: 404px;
+  background: var(--primary__color);
+
+  border: 1px solid #eee;
+}
+
+.name__card {
+  color: var(--titles__color);
+  font-family: var(--font-family);
+  font-weight: 700;
+  line-height: 36px;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+
+  width: 322px;
+  height: 36px;
+  margin: 20px 24px 4px 24px;
+}
+
+.articule__card {
+  color: var(--text__color);
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+
+  width: 322px;
+  height: 30px;
+  margin-left: 24px;
+  margin: 4px 24px 20px 24px;
+}
+
+.name__card__uni {
+  color: var(--titles__color);
+  font-family: var(--font-family);
+  font-weight: 700;
+  line-height: 22px;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+
+  width: 322px;
+  height: 40px;
+  margin: 20px 24px 4px 24px;
 }
