@@ -78,6 +78,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--titles__color);
 }
+
 .list__address {
   justify-content: space-between;
   display: flex;
@@ -103,7 +104,16 @@ ul {
   color: var(--buttons__color);
 }
 .background__hero {
-  background: var(--background__color);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("..//images/Background__image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
   padding: 94px;
   display: flex;
   text-align: center;
@@ -188,7 +198,8 @@ ul {
 }
 
 .title__equipment,
-.title__images {
+.title__images,
+.title__customer {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
@@ -210,7 +221,7 @@ ul {
 
 .card__equipment {
   width: 270px;
-  height: 368px;
+  height: 428px;
 
   background: var(--primary__color);
   text-align: center;
@@ -378,4 +389,31 @@ ul {
   width: 322px;
   height: 40px;
   margin: 20px 24px 4px 24px;
+}
+
+.icon__list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px 0px 32px;
+}
+
+.icon__item {
+  color: var(--text__color);
+  background-color: var(--primary__color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon__item:hover {
+  background-color: var(--buttons__color);
+}
+
+.icon__item:hover .icon {
+  fill: var(--primary__color);
 }
